@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.av.dev.pyurlifestylemanager.LoginFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackground">
+
+   <ImageView
+       android:layout_width="240dp"
+       android:layout_height="240dp"
+       android:id="@+id/lgoo"
+       android:background="@drawable/ic_logo"
+       android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtuser"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorTextColor"
+            android:text="User" />
+
+        <TextView
+            android:id="@+id/txtlifestyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rounded_bronze"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/txtuser"
+            android:textColor="@color/colorTextColor"
+            android:text="Lifestyle Manager" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:background="@drawable/rounded_edge"
+        android:padding="15dp"
+        android:textColorHint="@color/colorTextColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@drawable/rounded_edge"
+        android:padding="15dp"
+        android:textColorHint="@color/colorTextColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:background="@drawable/rounded_edge_button"
+        android:textColor="@color/colorTextColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorTextColor"
+            android:text="Forgot Password"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorTextColor"
+            android:text="Don't have an account? Request an access."
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,4 +1,4 @@
-package com.av.dev.pyurlifestylemanager;
+package com.av.dev.pyurlifestylemanager.core;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package com.av.dev.pyurlifestylemanager;
+package com.av.dev.pyurlifestylemanager.models.activity;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.appolica.flubber.Flubber;
+import com.av.dev.pyurlifestylemanager.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

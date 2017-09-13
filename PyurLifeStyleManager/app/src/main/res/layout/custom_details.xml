@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valery Anderson"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtname"
+        android:textColor="@color/colorBlackText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/address"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taguig City"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtaddress"
+        android:textColor="@color/colorBlackText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/mobile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0917 9940 991"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtmobile"
+        android:textColor="@color/colorBlackText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Since"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/employee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="July 05,2017"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtemployee"
+        android:textColor="@color/colorBlackText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/email"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="andersonvalery@yahoo.com"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtemail"
+        android:textColor="@color/colorBlackText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/password"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="******"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtpassword"
+        android:textColor="@color/colorBlackText"
+        android:inputType="textPassword"/>
+
+</LinearLayout>

@@ -1,7 +1,11 @@
-package com.av.dev.pyurlifestylemanager;
+package com.av.dev.pyurlifestylemanager.models.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.av.dev.pyurlifestylemanager.core.BaseActivity;
+import com.av.dev.pyurlifestylemanager.core.PEngine;
+import com.av.dev.pyurlifestylemanager.R;
+import com.av.dev.pyurlifestylemanager.models.LoginFragment;
 
 public class LoginActivity extends BaseActivity {
 

@@ -1,4 +1,4 @@
-package com.av.dev.pyurlifestylemanager.models;
+package com.av.dev.pyurlifestylemanager.models.fragment;
 
 
 import android.content.Intent;
@@ -61,6 +61,7 @@ public class LoginFragment extends Fragment {
     public void onClick(){
 
         startActivity(new Intent(getActivity(), MainActivity.class));
+        getActivity().finish();
 
     }
 

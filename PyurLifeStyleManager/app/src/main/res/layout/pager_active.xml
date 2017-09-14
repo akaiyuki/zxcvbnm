@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/profilepic"
@@ -37,44 +36,17 @@
         android:text="Flight Booking"
         android:textSize="@dimen/font_size_small" />
 
-    <RatingBar
-        android:id="@+id/rating"
-        style="?android:ratingBarStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/booking"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/profilepic"
-        android:numStars="5"
-        android:rating="2"
-        android:stepSize="1.0"
-        android:theme="@style/RatingBar"
-        android:progressTint="@color/colorStarSelected"/>
-
     <TextView
         android:id="@+id/details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rating"
+        android:layout_below="@+id/booking"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/profilepic"
-        android:text="Lorem ipsum dolor sit amet" />
+        android:text="Lorem ipsum dolor sit amet"
+        android:textStyle="italic"/>
 
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/details"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/profilepic"
-        android:text="August 10, 2017, 3:30 PM"
-        android:layout_marginBottom="20dp"
-        android:textSize="@dimen/font_size_small"/>
 
 </RelativeLayout>

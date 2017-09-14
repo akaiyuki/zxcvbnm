@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.av.dev.pyurlifestylemanager.models.AccountFragment">
+    tools:context="com.av.dev.pyurlifestylemanager.models.fragment.AccountFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,8 +24,8 @@
 
             <com.av.dev.pyurlifestylemanager.views.HexagonMaskView
                 android:id="@+id/image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="3dp"
                 android:scaleType="fitXY"
@@ -72,8 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/status"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -152,7 +152,7 @@
                         android:id="@+id/txtcancelled"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Finished"
+                        android:text="Cancelled"
                         android:textColor="@color/colorWhite"
                         android:textSize="@dimen/font_size_small" />
 

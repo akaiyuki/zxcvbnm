@@ -5,7 +5,7 @@ import android.os.Bundle;
 import com.av.dev.pyurlifestylemanager.core.BaseActivity;
 import com.av.dev.pyurlifestylemanager.core.PEngine;
 import com.av.dev.pyurlifestylemanager.R;
-import com.av.dev.pyurlifestylemanager.models.LoginFragment;
+import com.av.dev.pyurlifestylemanager.models.fragment.LoginFragment;
 
 public class LoginActivity extends BaseActivity {
 

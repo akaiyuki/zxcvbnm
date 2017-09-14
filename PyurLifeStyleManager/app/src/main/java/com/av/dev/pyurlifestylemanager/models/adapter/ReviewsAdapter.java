@@ -1,4 +1,4 @@
-package com.av.dev.pyurlifestylemanager.models;
+package com.av.dev.pyurlifestylemanager.models.adapter;
 
 import android.app.Activity;
 import android.content.Context;

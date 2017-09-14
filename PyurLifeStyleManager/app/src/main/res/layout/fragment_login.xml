@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     android:scrollbars="none"
-    tools:context="com.av.dev.pyurlifestylemanager.models.LoginFragment">
+    tools:context="com.av.dev.pyurlifestylemanager.models.fragment.LoginFragment">
 
 
     <LinearLayout

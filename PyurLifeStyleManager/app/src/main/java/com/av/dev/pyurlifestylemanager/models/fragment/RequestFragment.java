@@ -1,24 +1,21 @@
-package com.av.dev.pyurlifestylemanager.models;
+package com.av.dev.pyurlifestylemanager.models.fragment;
 
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.av.dev.pyurlifestylemanager.R;
-import com.av.dev.pyurlifestylemanager.views.CircleTransform;
-import com.av.dev.pyurlifestylemanager.views.CustomScrollview;
+import com.av.dev.pyurlifestylemanager.core.BaseActivity;
+import com.av.dev.pyurlifestylemanager.models.adapter.ActiveAdapter;
 import com.av.dev.pyurlifestylemanager.views.SlidingTabLayout;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -28,9 +25,12 @@ import butterknife.ButterKnife;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AccountFragment extends Fragment {
+public class RequestFragment extends Fragment {
 
-    protected String[] tabTitleList = {"Details", "Reviews"};
+    @BindView(R.id.app_bar)
+    Toolbar toolbar;
+
+    protected String[] tabTitleList = {"Active", "History"};
     private ViewPager mViewPager;
     private SectionsPagerAdapter mPageAdapter;
     private SlidingTabLayout mSlidingTabLayout;
@@ -38,7 +38,7 @@ public class AccountFragment extends Fragment {
     private ListView mListViewPager;
 
 
-    public AccountFragment() {
+    public RequestFragment() {
         // Required empty public constructor
     }
 
@@ -47,10 +47,18 @@ public class AccountFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_account, container, false);
+        View view = inflater.inflate(R.layout.fragment_request, container, false);
 
         ButterKnife.bind(this,view);
 
+        ((BaseActivity) getActivity()).setSupportActionBar(toolbar);
+        ((BaseActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(false);
+        ((BaseActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        ((BaseActivity) getActivity()).getSupportActionBar().setTitle("");
+
+
+        TextView mTxtTitle = toolbar.findViewById(R.id.txt_title);
+        mTxtTitle.setText("CLIENT REQUESTS");
 
         return view;
     }
@@ -118,7 +126,7 @@ public class AccountFragment extends Fragment {
 
             switch (position) {
                 case 0:
-                    resId = R.layout.custom_details;
+                    resId = R.layout.custom_active;
                     break;
                 case 1:
                     resId = R.layout.custom_account_list;
@@ -128,10 +136,8 @@ public class AccountFragment extends Fragment {
             View view = getActivity().getLayoutInflater().inflate(resId, container, false);
             ((ViewPager) container).addView(view, 0);
 
-            if (position == 1){
-
-
-                mListViewPager = view.findViewById(R.id.listview);
+            if (position == 0){
+                ListView listView = view.findViewById(R.id.listview);
 
                 ArrayList<String> list = new ArrayList<String>();
 
@@ -140,11 +146,10 @@ public class AccountFragment extends Fragment {
                 list.add("Diane Yap");
 
 
-                ReviewsAdapter mAdapter = new ReviewsAdapter(getActivity(), R.layout.custom_reviews, list);
+                ActiveAdapter mAdapter = new ActiveAdapter(getActivity(), R.layout.pager_active, list);
                 mAdapter.notifyDataSetChanged();
 
-                mListViewPager.setAdapter(mAdapter);
-
+                listView.setAdapter(mAdapter);
             }
 
 

@@ -129,7 +129,7 @@ public class RequestFragment extends Fragment {
                     resId = R.layout.custom_active;
                     break;
                 case 1:
-                    resId = R.layout.custom_account_list;
+                    resId = R.layout.custom_active;
                     break;
             }
 
@@ -137,6 +137,20 @@ public class RequestFragment extends Fragment {
             ((ViewPager) container).addView(view, 0);
 
             if (position == 0){
+                ListView listView = view.findViewById(R.id.listview);
+
+                ArrayList<String> list = new ArrayList<String>();
+
+                list.add("Ashley Graham");
+                list.add("Luke Andrews");
+                list.add("Diane Yap");
+
+
+                ActiveAdapter mAdapter = new ActiveAdapter(getActivity(), R.layout.pager_active, list);
+                mAdapter.notifyDataSetChanged();
+
+                listView.setAdapter(mAdapter);
+            } else if (position == 1){
                 ListView listView = view.findViewById(R.id.listview);
 
                 ArrayList<String> list = new ArrayList<String>();

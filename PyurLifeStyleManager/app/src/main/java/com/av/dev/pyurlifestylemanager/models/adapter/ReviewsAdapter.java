@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.av.dev.pyurlifestylemanager.R;
 import com.av.dev.pyurlifestylemanager.views.CircleTransform;
+import com.av.dev.pyurlifestylemanager.views.Fonts;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -83,6 +84,12 @@ public class ReviewsAdapter extends ArrayAdapter<String> {
         Drawable img = getContext().getResources().getDrawable( R.drawable.ic_flight );
         img.setBounds( 0, 0, 60, 60 );
         holder.txtbooking.setCompoundDrawables( img, null, null, null );
+
+
+        holder.txtname.setTypeface(Fonts.latoRegular);
+        holder.txtbooking.setTypeface(Fonts.latoRegular);
+        holder.txtDetails.setTypeface(Fonts.latoRegular);
+        holder.txtDate.setTypeface(Fonts.latoRegular);
 
 
         return convertView;

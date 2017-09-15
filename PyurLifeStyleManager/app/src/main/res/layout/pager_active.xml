@@ -46,7 +46,8 @@
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/profilepic"
         android:text="Lorem ipsum dolor sit amet"
-        android:textStyle="italic"/>
+        android:textStyle="italic"
+        android:layout_marginBottom="15dp"/>
 
 
 </RelativeLayout>
